@@ -5,3 +5,16 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+user1 = User.create!(name: "igaiga")
+5.times do |n|
+  user1.books.create!(title: "book#{n}")
+end
+
+user2 = User.create!(name: "other")
+3.times do |n|
+  user2.books.create!(title: "book#{n}")
+end
+
+user3 = User.create!(name: "other2")
+user3.books.create!(title: "book2")
