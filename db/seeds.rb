@@ -28,6 +28,13 @@ Novelty.create!([
   { name: "keychain", book_id: 3 }
 ])
 
+Package.create!([
+  {code: "R7aFIgWDrNwNRFL0"},
+  {code: "1234567890AAAAAA"},
+  {code: "1234567890BBBBBB"}
+])
+
 puts "#{User.count}件のユーザーデータを作成しました。"
 puts "#{Book.count}件の本データを作成しました。"
 puts "#{Novelty.count}件のノベルティデータを作成しました。"
+puts "#{Package.count}件のパッケージデータを作成しました。"
